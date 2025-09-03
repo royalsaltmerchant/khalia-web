@@ -45,6 +45,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 header h1 {
@@ -58,6 +59,7 @@ header h3 {
 
 #self-home-img {
   width: 60%;
+  margin-bottom: 10px;
 }
 
 nav {
@@ -65,6 +67,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 
 ul {
@@ -101,6 +104,7 @@ hr {
 section {
   max-width: 1200px;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .event {
@@ -139,6 +143,8 @@ section {
   border: 1px solid var(--gray);
   border-left-width: 0;
   border-right-width: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .scroll-track {
@@ -157,6 +163,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 @keyframes scroll-left {
