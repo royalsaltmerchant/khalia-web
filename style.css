@@ -242,7 +242,6 @@ video {
   margin-bottom: 10px;
   /* max-width: 90%; */
   border: 1px solid var(--gray)
-
 }
 
 .videos-container {
@@ -272,15 +271,15 @@ footer {
 
 @media only screen and (min-width: 1400px) {
   body::before {
-      background-size: 110%;
-      background-position: center -900px;
+    background-size: 110%;
+    background-position: center -900px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   body::before {
-      background-size: 140%;
-      background-position: center -600px;
+    background-size: 140%;
+    background-position: center -600px;
   }
 }
 
@@ -289,9 +288,13 @@ footer {
     background-color: var(--main-dark);
   }
 
-    body::before {
-      background-size: 140%;
-      background-position: center -400px;
+  body::before {
+    background-size: 140%;
+    background-position: center -400px;
+  }
+
+  header {
+    margin-top: 30px;
   }
 
   .div-text-wrap {
