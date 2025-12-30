@@ -209,7 +209,7 @@ section {
 .watermark {
   color: var(--gray);
   font-family: monospace;
-  font-size: 9px;
+  font-size: 7px;
 }
 
 .div-text-wrap {
