@@ -26,10 +26,10 @@
         </header>
       </div>
     </div>
-    <section>
+    <section class="reveal">
       <h2>NEW RELEASES</h2>
       <h2>LISTEN NOW</h2>
-      <div>
+      <div class="music-links">
         <a
           href="https://open.spotify.com/artist/6V29uDjEVLw3FPCNLJWsYq?si=q2QODoJeSsOHpJCv1bFkBg&nd=1&dlsi=ffa4bc2571b644f7"
           ><img width="40" src="./assets/spotify-logo-icon.svg" alt="spotify"
@@ -40,12 +40,12 @@
             src="./assets/apple-music-icon.svg"
             alt="apple music"
         /></a>
-        <a href="https://youtube.com/@khaliamusic.official"
+        <a href="https://youtube.com/@khaliaofficialmusic"
           ><img width="40" src="./assets/youtube-icon.svg" alt="youtube"
         /></a>
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="reveal">
       <div class="section-container">
         <h2>ABOUT</h2>
         <hr />
@@ -109,63 +109,110 @@
         <img src="./assets/perf3.jpg" alt="" />
       </div>
     </div>
-    <section id="performance">
+    <section id="performance" class="reveal">
       <div class="section-container">
         <h2>Live Performance</h2>
         <hr />
         <div class="videos-container">
-          <h3>River</h3>
-          <video controls loop src="./assets/river_instructions.mp4"></video>
-          
-          <h3>Thrive</h3>
-          <video controls loop src="./assets/thrive.mp4"></video>
-
-          <h3>Need You Now</h3>
-          <video controls loop src="./assets/need_you_now.mp4"></video>
-
+          <article class="video-card">
+            <h3>River</h3>
+            <video
+              controls
+              loop
+              playsinline
+              preload="metadata"
+              poster="./assets/perf6.jpg"
+              src="./assets/river_instructions.mp4"
+            ></video>
+          </article>
+          <article class="video-card">
+            <h3>Thrive</h3>
+            <span class="video-badge">Featured</span>
+            <video
+              controls
+              loop
+              playsinline
+              preload="metadata"
+              poster="./assets/perf7.jpg"
+              src="./assets/thrive.mp4"
+            ></video>
+          </article>
+          <article class="video-card">
+            <h3>Need You Now</h3>
+            <video
+              controls
+              loop
+              playsinline
+              preload="metadata"
+              poster="./assets/perf8.jpg"
+              src="./assets/need_you_now.mp4"
+            ></video>
+          </article>
         </div>
       </div>
     </section>
-    <section id="events">
+    <section id="events" class="reveal">
       <h2>Events</h2>
       <hr />
       <iframe
+        class="events-calendar"
         src="https://calendar.google.com/calendar/embed?src=5053619d6756b0c170f3ba514c2e71f7ad6b04dfbb5efd1fbd2451b22cf1d250%40group.calendar.google.com&ctz=America%2FLos_Angeles&mode=AGENDA"
-        style="border: 0; width: 95vw; height: 500px;"
         frameborder="0"
         scrolling="no"
       ></iframe>
     </section>
-    <section id="contact">
+    <section id="contact" class="reveal">
       <h2>CONTACT</h2>
       <hr />
       <div style="margin-left: 10px">
-        <b>For booking inquires please email - </b>
+        <b>For booking inquiries please email - </b>
         <a href="mailto:khaliaofficialmusic@gmail.com"
           >khaliaofficialmusic@gmail.com</a
         >
       </div>
     </section>
-    <footer>
-      <div>
+    <footer class="reveal">
+      <div class="social-links">
         <a href="https://instagram.com/khalia.music/?hl=en"
-          ><img src="" alt="" /><img
+          ><img
             src="./assets/instagram-icon.svg"
             alt="instagram"
             width="60"
         /></a>
         <a href="https://tiktok.com/@khalia.music"
-          ><img src="" alt="" /><img
+          ><img
             src="./assets/tiktok-icon.svg"
             alt="tiktok"
             width="60"
         /></a>
-        <a href="https://youtube.com/@khaliamusic.official"
+        <a href="https://youtube.com/@khaliaofficialmusic"
           ><img width="60" src="./assets/youtube-icon.svg" alt="youtube"
         /></a>
       </div>
       <br>
       <div class="watermark">~ Julian Ranieri 2025</div>
     </footer>
+    <script>
+      (function () {
+        const revealNodes = document.querySelectorAll(".reveal");
+        if (!("IntersectionObserver" in window)) {
+          revealNodes.forEach((node) => node.classList.add("is-visible"));
+          return;
+        }
+
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("is-visible");
+              obs.unobserve(entry.target);
+            });
+          },
+          { threshold: 0.16, rootMargin: "0px 0px -40px 0px" }
+        );
+
+        revealNodes.forEach((node) => observer.observe(node));
+      })();
+    </script>
   </body>
 </html>
