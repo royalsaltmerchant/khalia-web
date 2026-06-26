@@ -1,25 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KHALIA | INDEX</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./utils.js" defer></script>
   </head>
   <body>
+    <!-- slide out side bar -->
+    <div id="mobile-menu"></div>
+
     <div class="custom-head-wrapper">
       <img id="self-home-img" src="./assets/main-self.jpg" alt="self" />
 
       <div class="overlay-content">
-        <nav>
-          <a href="#about">ABOUT</a>
+        <!-- <nav> -->
+        <!-- <a href="#about">ABOUT</a>
           <div>|</div>
           <a href="#performance">PERFORMANCE</a>
           <div>|</div>
           <a href="#events">EVENTS</a>
           <div>|</div>
-          <a href="#contact">CONTACT</a>
-        </nav>
+          <a href="#contact">CONTACT</a> -->
+        <!-- mobile nav -->
+        <!-- </nav> -->
+        <img
+          id="hamburger"
+          class="mobile-nav"
+          src="./assets/hamburger-button-svgrepo-com.svg"
+        />
         <header>
           <h1>KHALIA</h1>
           <h3>Singer | Songwriter | Performer</h3>
@@ -51,37 +61,33 @@
         <hr />
         <div>
           <p>
-            Khalia is a soulful music artist of Hmong ethnicity whose sound
-            blends heartfelt melodies with raw, resonant storytelling. Rooted in
-            her heritage and shaped by her journey through an array of genres
-            such as pop, R&B, country, and traditional Hmong music, her artistry
-            explores themes of identity, resilience, and self-discovery,
-            bridging past and present in a style that is both timeless and
-            innovative.
+            Khalia is a Bay Area artist with a voice that stops you
+            mid-conversation. Drawing from soul, pop, and the kind of
+            storytelling that feels personal even when it isn't yours, she
+            creates music rooted in honesty and built to last.
           </p>
           <br />
           <div class="div-text-wrap">
             <div>
               <p>
-                From underground performances and competitions to hosting her
-                first concert in 2024, Khalia has consistently captivated
-                audiences with her powerful voice and authentic presence.
-                Whether on stage or in the studio, she creates music that
-                connects deeply, celebrating personal truth while resonating
-                with universal emotions.
+                Of Hmong heritage, Khalia brings a perspective that is rarely
+                heard in mainstream music, one shaped by identity, resilience,
+                and the tension between where you come from and who you're
+                becoming.
               </p>
               <br />
               <p>
-                Today, Khalia’s music reflects both where she comes from and
-                where she is going. It is a journey of resilience, identity, and
-                connection, evolving with every song she sings and every stage
-                she steps onto.
+                She has headlined her own concerts and performed at festivals
+                and events across the Bay Area, consistently delivering live
+                shows backed by a full band. Her performances are known for
+                their emotional depth and the kind of presence that stays with
+                you long after the last note.
               </p>
             </div>
             <img
-              style="padding: 10px; height: 30vh"
-              src="./assets/about-self2.jpg"
-              alt="about self 2"
+              style="padding: 10px; height: 50vh"
+              src="./assets/about-self3.jpg"
+              alt="about self image"
             />
           </div>
         </div>
@@ -89,6 +95,8 @@
     </section>
     <div class="scroll-wrapper">
       <div class="scroll-track">
+        <img src="./assets/perf10.jpg" alt="" />
+        <img src="./assets/perf9.jpg" alt="" />
         <img src="./assets/perf6.jpg" alt="" />
         <img src="./assets/perf7.jpg" alt="" />
         <img src="./assets/perf8.jpg" alt="" />
@@ -99,6 +107,8 @@
         <img src="./assets/perf3.jpg" alt="" />
 
         <!-- duplicate images for seamless loop -->
+        <img src="./assets/perf10.jpg" alt="" />
+        <img src="./assets/perf9.jpg" alt="" />
         <img src="./assets/perf6.jpg" alt="" />
         <img src="./assets/perf7.jpg" alt="" />
         <img src="./assets/perf8.jpg" alt="" />
@@ -109,9 +119,25 @@
         <img src="./assets/perf3.jpg" alt="" />
       </div>
     </div>
+    <section id="collaborations" class="reveal">
+      <div class="section-container">
+        <h2>COLLABORATIONS</h2>
+        <hr />
+        <div class="collab-img-container">
+          <img class="collab-img" src="./assets/sfcma.png" />
+          <img class="collab-img" src="./assets/kron4.jpg" />
+          <img class="collab-img" src="./assets/sunsetmerc.png" />
+          <img class="collab-img" src="./assets/sse.jpg" />
+          <img class="collab-img" src="./assets/castro.jpg" />
+          <img class="collab-img" src="./assets/huntandgather.png" />
+          <img class="collab-img" src="./assets/clarion.png" />
+          <img class="collab-img" src="./assets/intheblack.png" />
+        </div>
+      </div>
+    </section>
     <section id="performance" class="reveal">
       <div class="section-container">
-        <h2>Live Performance</h2>
+        <h2>Performances</h2>
         <hr />
         <div class="videos-container">
           <article class="video-card">
@@ -121,20 +147,20 @@
               loop
               playsinline
               preload="metadata"
-              poster="./assets/perf6.jpg"
+              poster="./assets/perf2.jpg"
               src="./assets/river_instructions.mp4"
             ></video>
           </article>
           <article class="video-card">
-            <h3>Thrive</h3>
+            <h3>For Tonight</h3>
             <span class="video-badge">Featured</span>
             <video
               controls
               loop
               playsinline
               preload="metadata"
-              poster="./assets/perf7.jpg"
-              src="./assets/thrive.mp4"
+              poster="./assets/perf9.jpg"
+              src="./assets/for_tonight.mp4"
             ></video>
           </article>
           <article class="video-card">
@@ -144,7 +170,7 @@
               loop
               playsinline
               preload="metadata"
-              poster="./assets/perf8.jpg"
+              poster="./assets/perf1.jpg"
               src="./assets/need_you_now.mp4"
             ></video>
           </article>
@@ -152,7 +178,7 @@
       </div>
     </section>
     <section id="events" class="reveal">
-      <h2>Events</h2>
+      <h2>Upcoming Events</h2>
       <hr />
       <iframe
         class="events-calendar"
@@ -161,8 +187,41 @@
         scrolling="no"
       ></iframe>
     </section>
+    <section id="testimonies" class="reveal">
+      <h2>TESTIMONIES</h2>
+      <hr />
+      <div class="testimonies-container">
+        <div class="testimony">
+          <p>
+            “I’ve never regretted attending her events & have always left
+            wanting more in the best way possible.”
+          </p>
+          <p>- Marisela C.</p>
+        </div>
+        <div class="testimony">
+          <p>
+            “Khalia is a talented and hardworking artist who takes her craft and
+            brand seriously.”
+          </p>
+          <p>- Totiana W.</p>
+        </div>
+        <div class="testimony">
+          <p>
+            “She has always have been so kind, so organized, so professional.”
+          </p>
+          <p>- Jay W.</p>
+        </div>
+        <div class="testimony">
+          <p>
+            “Khalia is certainly an extraordinary artist with a beautiful
+            presence and voice”
+          </p>
+          <p>- Cynthia Y.</p>
+        </div>
+      </div>
+    </section>
     <section id="contact" class="reveal">
-      <h2>CONTACT</h2>
+      <h2>CONTACT & BOOKING</h2>
       <hr />
       <div style="margin-left: 10px">
         <b>For booking inquiries please email - </b>
@@ -174,23 +233,17 @@
     <footer class="reveal">
       <div class="social-links">
         <a href="https://instagram.com/khalia.music/?hl=en"
-          ><img
-            src="./assets/instagram-icon.svg"
-            alt="instagram"
-            width="60"
+          ><img src="./assets/instagram-icon.svg" alt="instagram" width="60"
         /></a>
         <a href="https://tiktok.com/@khalia.music"
-          ><img
-            src="./assets/tiktok-icon.svg"
-            alt="tiktok"
-            width="60"
+          ><img src="./assets/tiktok-icon.svg" alt="tiktok" width="60"
         /></a>
         <a href="https://youtube.com/@khaliaofficialmusic"
           ><img width="60" src="./assets/youtube-icon.svg" alt="youtube"
         /></a>
       </div>
-      <br>
-      <div class="watermark">~ Julian Ranieri 2025</div>
+      <br />
+      <div class="watermark">~ Julian Ranieri 2026</div>
     </footer>
     <script>
       (function () {
@@ -208,7 +261,7 @@
               obs.unobserve(entry.target);
             });
           },
-          { threshold: 0.16, rootMargin: "0px 0px -40px 0px" }
+          { threshold: 0.16, rootMargin: "0px 0px -40px 0px" },
         );
 
         revealNodes.forEach((node) => observer.observe(node));
