@@ -14,7 +14,7 @@ function SideBar(props) {
           <hr>
           <a href="#performance"><div class="sidebar-items-item">Performances</div></a>
           <hr>
-          <a href="#events"><div class="sidebar-items-item">UpcomingEvents</div></a>
+          <a href="#events"><div class="sidebar-items-item">Upcoming Events</div></a>
           <hr>
           <a href="#testimonies"><div class="sidebar-items-item">Testimonies</div></a>
           <hr>

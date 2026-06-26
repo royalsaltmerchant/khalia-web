@@ -113,6 +113,7 @@ b {
 h2 {
   font-size: clamp(1.7rem, 2.4vw, 2.5rem);
   letter-spacing: 0.06em;
+  margin-bottom: 10px;
 }
 
 
@@ -258,6 +259,7 @@ nav a:focus-visible {
 }
 
 .sidebar-items-item {
+  color: var(--bright-white);
   height: 50px;
   display: flex;
   align-items: center;
@@ -372,6 +374,17 @@ section>* {
 
 .div-text-wrap {
   display: flex;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 600px;
 }
 
 .scroll-wrapper {
